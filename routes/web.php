@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use \App\Models\Post;
+use App\Models\Post;
+use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
     return view('home', [
@@ -18,22 +19,9 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/blog', function () {
-    return view('blog', [
-        "title" => "Post",
-        "posts" => Post::all()
-    ]);
-});
+Route::get('/blog', [PostController::class, 'index']);
 
 // //Halaman Singgel Posts
 
-Route::get('posts/{slug}', function ($slug) {
-
-    
-
-    return view('post', [
-        "title" => "Single Post",
-        "post" => Post::find($slug)
-    ]);
-});
+Route::get('posts/{slug}', [PostController::class, 'show']);
 
