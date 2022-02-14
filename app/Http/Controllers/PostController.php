@@ -17,7 +17,7 @@ class PostController extends Controller
   public function show($slug)
   {
       {
-    return view('post', [
+      return view('post', [
         "title" => "Single Post",
         "post" => Post::find($slug)
     ]);
