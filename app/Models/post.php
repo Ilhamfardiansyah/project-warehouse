@@ -14,7 +14,7 @@ class Post
 "
     ],
     [ 
-        // "title" => "Judu Post Kedua",
+        "title" => "Judu Post Kedua",
         "slug" => "judul-post-kedua",
         "author" => "Jaya Wijaya",
         "body" => "Lorem ipsum dolor sit amet consectetur adipisicing 
