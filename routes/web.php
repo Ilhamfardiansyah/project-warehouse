@@ -23,5 +23,5 @@ Route::get('/blog', [PostController::class, 'index']);
 
 // //Halaman Singgel Posts
 
-Route::get('posts/{slug}', [PostController::class, 'show']);
+Route::get('posts/{post:slug}', [PostController::class, 'show']);
 
