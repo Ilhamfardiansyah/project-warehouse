@@ -9,6 +9,8 @@
 
     {{-- Bootstrap icon --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    {{-- css --}}
 
     <title>Hello, Selamat Datang {{ $title }}</title>
 </head>

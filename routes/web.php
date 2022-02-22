@@ -22,8 +22,7 @@ Route::get('/about', function () {
 
 Route::get('/blog', [PostController::class, 'index']);
 
-// //Halaman Singgel Posts
-
+// Halaman Singgel Posts
 Route::get('posts/{post:slug}', [PostController::class, 'show']);
-
+// Login
 Route::get('/login', [LoginController::class, 'index']);
