@@ -24,6 +24,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Welcome, {{ auth()->user()->name }}
+                            {{ auth()->user()->email }}
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="/dashboard"><i class="bi bi-clipboard-data-fill"> </i>Stock
